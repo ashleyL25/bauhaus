@@ -1330,7 +1330,7 @@ a.brand:focus {
 
 .zoom-anim-dialog {
     background: rgba(0,0,0,0.8);
-    padding: 3rem;
+    padding: 2.6rem;
     margin: 0 auto;
 }
 
@@ -1995,6 +1995,35 @@ a.brand:focus {
     padding-right: 4rem;
 }
 
+@media (max-width: 768px){
+    .pull-sm-right {
+        float: left!important;
+    }
+
+    .width-5 {
+        width: 100%!important;
+        padding: 5rem;
+    }
+
+    .width-7 {
+        max-width: 100%!important;
+        padding: 5rem;
+    }
+
+    .add-padding {
+        padding-top: 4rem!important;
+    }
+
+    .add-padding-right {
+        padding-right: 1rem!important;
+    }
+
+    .column-containing {
+        max-width: 100%!important;
+        margin-right: -8%;
+    }
+}
+
 /* ------------------------------------------------------------------------------- */
 /* 8. Responsive styles
 /* ------------------------------------------------------------------------------- */
@@ -2226,8 +2255,25 @@ a.brand:focus {
     padding-top: 6rem;
 }
 
+.slider-container .slider-controls a {
+    position: absolute;
+    top: 45%;
+    z-index: 100;
+    color: #333333;
+}
+
+.slider-container .slider-controls a.slider-left {
+    left: -25px;
+    color: #333333;
+}
+
+.slider-container .slider-controls a.slider-right {
+    right: -25px;
+    color: #333333;
+}
+
 .thumbnail-slider-container {
-    margin-top: -20%;
+    margin-top: 10px;
 }
 
 .thumbnail-slider .content {
@@ -2262,24 +2308,10 @@ a.brand:focus {
 }
 
 .column-containing .slider img {
-    display: block;
+    display: inline-block;
+    padding: 2rem;
     margin-left: auto;
     margin-right: auto;
-}
-
-.slider-container .slider-controls a {
-    position: absolute;
-    top: 45%;
-    z-index: 100;
-    color: #fff;
-}
-
-.slider-container .slider-controls a.slider-left {
-    left: -25px;
-}
-
-.slider-container .slider-controls a.slider-right {
-    right: -25px;
 }
 
 .thumbnail-slider .sizing {
@@ -2293,40 +2325,8 @@ a.brand:focus {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    padding: 5px;
+    padding: 7px;
     transform: translate(-50%, -50%);
 }
 
-@media (max-width: 768px){
-    .pull-sm-right {
-        float: left!important;
-    }
 
-    .width-5 {
-        width: 100%!important;
-        padding: 5rem;
-    }
-
-    .width-7 {
-        max-width: 100%!important;
-        padding: 5rem;
-    }
-
-    .add-padding {
-        padding-top: 4rem!important;
-    }
-
-    .add-padding-right {
-        padding-right: 1rem!important;
-    }
-
-    .column-containing {
-        max-width: 100%!important;
-        margin-right: -8%;
-    }
-
-    .thumbnail-slider .sizing img {
-        padding: 0;
-        width: 80px;
-    }
-}

@@ -1332,6 +1332,7 @@ a.brand:focus {
     background: rgba(0,0,0,0.8);
     padding: 3rem;
     margin: 0 auto;
+    padding-bottom: 5rem;
 }
 
 /* * Fade-zoom animation for first dialog */
@@ -1995,6 +1996,35 @@ a.brand:focus {
     padding-right: 4rem;
 }
 
+@media (max-width: 768px){
+    .pull-sm-right {
+        float: left!important;
+    }
+
+    .width-5 {
+        width: 100%!important;
+        padding: 5rem;
+    }
+
+    .width-7 {
+        max-width: 100%!important;
+        padding: 5rem;
+    }
+
+    .add-padding {
+        padding-top: 4rem!important;
+    }
+
+    .add-padding-right {
+        padding-right: 1rem!important;
+    }
+
+    .column-containing {
+        max-width: 100%!important;
+        margin-right: -8%;
+    }
+}
+
 /* ------------------------------------------------------------------------------- */
 /* 8. Responsive styles
 /* ------------------------------------------------------------------------------- */
@@ -2293,40 +2323,8 @@ a.brand:focus {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    padding: 5px;
+    padding: 7px;
     transform: translate(-50%, -50%);
 }
 
-@media (max-width: 768px){
-    .pull-sm-right {
-        float: left!important;
-    }
 
-    .width-5 {
-        width: 100%!important;
-        padding: 5rem;
-    }
-
-    .width-7 {
-        max-width: 100%!important;
-        padding: 5rem;
-    }
-
-    .add-padding {
-        padding-top: 4rem!important;
-    }
-
-    .add-padding-right {
-        padding-right: 1rem!important;
-    }
-
-    .column-containing {
-        max-width: 100%!important;
-        margin-right: -8%;
-    }
-
-    .thumbnail-slider .sizing img {
-        padding: 0;
-        width: 80px;
-    }
-}
