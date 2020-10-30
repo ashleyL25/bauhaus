@@ -1192,7 +1192,8 @@ a.brand:focus {
 
 .owl-dots {
     text-align: center;
-    margin-top: 5.857rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .owl-dot {
@@ -2274,7 +2275,7 @@ a.brand:focus {
 
 .slider-container .slider-controls a {
     position: absolute;
-    top: 45%;
+    top: 30%;
     z-index: 100;
     color: #fff;
 }
@@ -2339,6 +2340,8 @@ a.brand:focus {
         width: 300px!important;
         height: 300px!important;
         margin-top: 4rem!important;
+        margin-left: 0!important;
+        margin-left: 1rem!important;
     }
 }
 
@@ -2364,6 +2367,7 @@ a.brand:focus {
         width: 300px!important;
         height: 300px!important;
         margin-top: 0;
+        margin-left: 0!important;
     }
 
     .slider-container .slider .content img {
@@ -2372,7 +2376,7 @@ a.brand:focus {
     }
 }
 
-@media (max-width: 900px){
+@media (min-width: 900px){
     .column-containing {
         width: 400px;
         height: 400px;
@@ -2391,9 +2395,10 @@ a.brand:focus {
 
 @media (max-width: 768px){
     .column-containing {
-        width: 400px;
-        height: 400px;
+        width: 300px!important;
+        height: 300px!important;
         margin-top: 4rem;
+        float: left!important;
     }
 
     .slider-container .slider .content img {
@@ -2403,5 +2408,12 @@ a.brand:focus {
 
     .add-padding-right {
         padding: 0!important;
+    }
+
+    .width-5 {
+      float: right!important;
+      padding-right: 1rem;
+      padding-left: 0!important;
+
     }
 }
