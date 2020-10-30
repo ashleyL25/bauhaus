@@ -4,7 +4,7 @@
   Description: Bauhaus - OnePage Architecture & Interior HTML Template
   Author: Murren
   Version: 1.0
-  
+
   1.  Global
 
       1.1 General
@@ -15,12 +15,12 @@
       1.6 Loader
       1.7 Helpers
 
-  2.  Navbar 
+  2.  Navbar
 
       2.1 Navbar elements
       2.2 Navbar affix
       2.3 Sidebar Menu
-      
+
   3.  Homepage
 
       3.1 Jumbotron
@@ -43,21 +43,21 @@
       4.3 Section About
       4.4 Section Projects
       4.5 Section Partners
-      4.6 Section Testimonials 
+      4.6 Section Testimonials
       4.7 Section Contacts
 
   5. Responsive styles
 
       5.1 Min width: 768px
       5.2 Min width 992px
-      5.3 Min width 1200px 
-      5.4 Min width 1550px 
+      5.3 Min width 1200px
+      5.4 Min width 1550px
       5.5 Min height 500px
       5.6 Min height 600px
       5.7 Min height 700px
 
 
-      
+
 /*-------------------------------------------------------------------------------
  1. Global
 ------------------------------------------------------------------------------- */
@@ -2012,6 +2012,10 @@ a.brand:focus {
         float: right;
     }
 
+    .add-padding-right {
+        padding-right: 0!important;
+    }
+
     /* Sidebar Menu */
     .menu {
         width: 50%;
@@ -2259,6 +2263,7 @@ a.brand:focus {
     width: 500px;
     height: 500px;
     background: #fff;
+    margin-top: 3rem;
 }
 
 .column-containing .slider img {
@@ -2297,7 +2302,7 @@ a.brand:focus {
     transform: translate(-50%, -50%);
 }
 
-@media (max-width: 768px){
+@media (max-width: 600px){
     .pull-sm-right {
         float: left!important;
     }
@@ -2307,26 +2312,96 @@ a.brand:focus {
         padding: 5rem;
     }
 
-    .width-7 {
+    /* .width-7 {
         max-width: 100%!important;
         padding: 5rem;
-    }
-
+    } */
     .add-padding {
         padding-top: 4rem!important;
-    }
-
-    .add-padding-right {
-        padding-right: 1rem!important;
     }
 
     .column-containing {
         max-width: 100%!important;
         margin-right: -8%;
+        margin-left: 5rem;
     }
 
     .thumbnail-slider .sizing img {
         padding: 0;
         width: 80px;
+    }
+
+    .width-5 {
+        max-width: 100%!important;
+    }
+
+    .column-containing {
+        width: 300px!important;
+        height: 300px!important;
+        margin-top: 4rem!important;
+    }
+}
+
+@media (max-width: 1000px){
+    .column-containing {
+        width: 400px!important;
+        height: 400px!important;
+        margin-top: 4rem!important;
+    }
+
+    .slider-container .slider .content img {
+        width: 100%!important;
+        margin: 0!important;
+    }
+
+    .width-5 {
+        padding-left: 1rem!important;
+    }
+}
+
+@media (max-width: 500px){
+    .column-containing {
+        width: 300px!important;
+        height: 300px!important;
+        margin-top: 0;
+    }
+
+    .slider-container .slider .content img {
+        width: 100%!important;
+        margin: 0!important;
+    }
+}
+
+@media (max-width: 900px){
+    .column-containing {
+        width: 400px;
+        height: 400px;
+        margin-top: 4rem;
+    }
+
+    .slider-container .slider .content img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .add-padding-right {
+        padding: 0!important;
+    }
+}
+
+@media (max-width: 768px){
+    .column-containing {
+        width: 400px;
+        height: 400px;
+        margin-top: 4rem;
+    }
+
+    .slider-container .slider .content img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .add-padding-right {
+        padding: 0!important;
     }
 }

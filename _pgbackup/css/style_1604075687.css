@@ -4,7 +4,7 @@
   Description: Bauhaus - OnePage Architecture & Interior HTML Template
   Author: Murren
   Version: 1.0
-  
+
   1.  Global
 
       1.1 General
@@ -15,12 +15,12 @@
       1.6 Loader
       1.7 Helpers
 
-  2.  Navbar 
+  2.  Navbar
 
       2.1 Navbar elements
       2.2 Navbar affix
       2.3 Sidebar Menu
-      
+
   3.  Homepage
 
       3.1 Jumbotron
@@ -43,21 +43,21 @@
       4.3 Section About
       4.4 Section Projects
       4.5 Section Partners
-      4.6 Section Testimonials 
+      4.6 Section Testimonials
       4.7 Section Contacts
 
   5. Responsive styles
 
       5.1 Min width: 768px
       5.2 Min width 992px
-      5.3 Min width 1200px 
-      5.4 Min width 1550px 
+      5.3 Min width 1200px
+      5.4 Min width 1550px
       5.5 Min height 500px
       5.6 Min height 600px
       5.7 Min height 700px
 
 
-      
+
 /*-------------------------------------------------------------------------------
  1. Global
 ------------------------------------------------------------------------------- */
@@ -1330,7 +1330,7 @@ a.brand:focus {
 
 .zoom-anim-dialog {
     background: rgba(0,0,0,0.8);
-    padding: 2.6rem;
+    padding: 3rem;
     margin: 0 auto;
 }
 
@@ -1995,35 +1995,6 @@ a.brand:focus {
     padding-right: 4rem;
 }
 
-@media (max-width: 768px){
-    .pull-sm-right {
-        float: left!important;
-    }
-
-    .width-5 {
-        width: 100%!important;
-        padding: 5rem;
-    }
-
-    .width-7 {
-        max-width: 100%!important;
-        padding: 5rem;
-    }
-
-    .add-padding {
-        padding-top: 4rem!important;
-    }
-
-    .add-padding-right {
-        padding-right: 1rem!important;
-    }
-
-    .column-containing {
-        max-width: 100%!important;
-        margin-right: -8%;
-    }
-}
-
 /* ------------------------------------------------------------------------------- */
 /* 8. Responsive styles
 /* ------------------------------------------------------------------------------- */
@@ -2247,6 +2218,7 @@ a.brand:focus {
 }
 
 .slider-container .slider .content img {
+    width: 100%;
     margin: 0;
 }
 
@@ -2254,36 +2226,17 @@ a.brand:focus {
     padding-top: 6rem;
 }
 
-.slider-container .slider-controls a {
-    position: absolute;
-    top: 45%;
-    z-index: 100;
-    color: #333333;
-}
-
-.slider-container .slider-controls a.slider-left {
-    left: -25px;
-    color: #333333;
-}
-
-.slider-container .slider-controls a.slider-right {
-    right: -25px;
-    color: #333333;
-}
-
 .thumbnail-slider-container {
-    margin-top: 10px;
+    margin-top: -20%;
 }
 
 .thumbnail-slider .content {
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 5px;
 }
 
 .thumbnail-slider .content img {
-    margin: 0;
+    margin-right: 3rem;
+    margin-left: 0;
 }
 
 .center img {
@@ -2306,13 +2259,139 @@ a.brand:focus {
     width: 500px;
     height: 500px;
     background: #fff;
+    margin-top: 3rem;
 }
 
-.column-containing img {
-    display: inline-block;
-    padding: 2rem;
+.column-containing .slider img {
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+.slider-container .slider-controls a {
+    position: absolute;
+    top: 45%;
+    z-index: 100;
+    color: #fff;
+}
 
+.slider-container .slider-controls a.slider-left {
+    left: -25px;
+}
+
+.slider-container .slider-controls a.slider-right {
+    right: -25px;
+}
+
+.thumbnail-slider .sizing {
+    width: 80px;
+    height: 80px;
+    background: white;
+}
+
+.thumbnail-slider .sizing img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    padding: 5px;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px){
+    .pull-sm-right {
+        float: left!important;
+    }
+
+    .width-5 {
+        width: 100%!important;
+        padding: 5rem;
+    }
+
+    .width-7 {
+        max-width: 100%!important;
+        padding: 5rem;
+    }
+
+    .add-padding {
+        padding-top: 4rem!important;
+    }
+
+    .column-containing {
+        max-width: 100%!important;
+        margin-right: -8%;
+        margin-left: 5rem;
+    }
+
+    .thumbnail-slider .sizing img {
+        padding: 0;
+        width: 80px;
+    }
+
+    .container {
+      width: 500px!important;
+    }
+
+    .width-5 {
+      max-width: 100%!important;
+    }
+}
+
+@media (max-width: 1000px){
+  .column-containing {
+    width: 400px;
+    height: 400px;
+    margin-top: 4rem;
+  }
+
+  .slider-container .slider .content img {
+      width: 100%;
+      margin: 0;
+  }
+
+  .container {
+    width: 950px!important;
+  }
+}
+
+@media (max-width: 900px){
+  .column-containing {
+    width: 400px;
+    height: 400px;
+    margin-top: 4rem;
+  }
+
+  .slider-container .slider .content img {
+      width: 100%;
+      margin: 0;
+  }
+
+  .container {
+    width: 750px!important;
+  }
+
+  .add-padding-right {
+    padding: 0!important;
+  }
+}
+
+@media (max-width: 768px){
+  .column-containing {
+    width: 400px;
+    height: 400px;
+    margin-top: 4rem;
+  }
+
+  .slider-container .slider .content img {
+      width: 100%;
+      margin: 0;
+  }
+
+  .container {
+    width: 750px!important;
+  }
+
+  .add-padding-right {
+    padding: 0!important;
+  }
+}
