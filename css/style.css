@@ -105,7 +105,7 @@ body {
 }
 
 ::selection {
-    background-color: #cee002;
+    background-color: #DEC699;
     color: #fff;
 }
 
@@ -2411,9 +2411,8 @@ a.brand:focus {
     }
 
     .width-5 {
-      float: right!important;
-      padding-right: 1rem;
-      padding-left: 0!important;
-
+        float: right!important;
+        padding-right: 1rem;
+        padding-left: 0!important;
     }
 }
